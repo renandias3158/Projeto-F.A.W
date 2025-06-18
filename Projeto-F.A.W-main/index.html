@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <icon rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+p,h1,h2,header,label{
+    color:rgb(255, 255, 255);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    transition-duration: 0.5s;
+}
+button{
+    border: solid;
+    border-color: rgb(207, 141, 0);
+    background-color: yellow;
+    margin: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 40px;
+    transition-duration: 0.5s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+button:hover{
+    transition-duration: 0.5s;
+    transform: scale(110%);
+}
+body{
+    background-color: black
+}
+.container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: right;
+    background-color: rgba(53, 43, 8, 0.411);
+    flex-wrap: nowrap;
+}
+img{
+    display: inline-block;
+    width: 15%;
+    height: 15%;
+    margin-right: 1%;
+}
+.FAW{
+    font-size: 30px;
+    margin-right: 50%;
+}
+.Discurso{
+    margin-left: 1cm;
+    font-size: x-large;
+    width: 20cm;
+}
+.form{
+    display: inline-flex;
+    margin-left: 35%;
+    padding:30px;
+    background-color: rgba(53, 43, 8, 0.411);
+    border-radius: 20px;
+    justify-content: center;
+}
+input{
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition-duration: 0.5s;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+input:hover{
+    transition-duration: 0.5s;
+    transform: scale(110%);
+}
+.integ{
+    margin-left: 1cm;
+    margin-bottom: 1cm;
+    border-color:rgba(53, 43, 8, 0.411);
+}
+div.integ>p:hover{
+    transition-duration: 0.5s;
+    color: yellow;
+}
+</style>
+
+<body>
+    <header class="">
+        <div class="container">
+        <img src="FAW.png" alt="">
+        <div class="FAW">
+        <h1 >F.A.W</h1>
+        <h2 style="font-size: 30px;">For All Workers</h2>
+        </div>
+        <button id = "Inicio"> Inicio</button>
+        <a href="Projeto F.A.W.pdf" target="_blank" class="meu-botao"><button id="Mais sobre"> Mais sobre</button></a>
+        <button id="Fale com a gente"> Fale com a gente</button><!--tem que ajeitar esses botões no header-->
+        </div>
+    </header>
+    <div class="Discurso">
+        <p>O <B>F.A.W.</B> (For All Workers) é uma plataforma digital inovadora criada com o objetivo de proporcionar um canal seguro, prático e acessível para a denúncia de acidentes de trabalho. Pensando na proteção e na valorização da vida do trabalhador, o sistema foi projetado para permitir que trabalhadores, testemunhas presenciais ou qualquer cidadão consciente possam registrar, de forma identificada, ocorrências relacionadas a acidentes, condições de risco ou práticas laborais inseguras em qualquer ambiente profissional.<br><br>
+
+A ferramenta se destaca por oferecer uma interface simples e funcional, garantindo que o processo de denúncia possa ser feito de maneira ágil, sem burocracias desnecessárias. Ao coletar essas informações diretamente da sociedade, o F.A.W. contribui de maneira significativa para o fortalecimento da fiscalização pública e institucional, permitindo que autoridades competentes possam agir com mais rapidez e precisão na apuração dos fatos, responsabilização de empregadores, e implementação de medidas corretivas.<br><br>
+    </div>
+ <div class="form">
+  <form>
+    <p style=>abaixo estão os campos que devem ser preenchidos para a denúncia:</p>
+    <br>
+    
+     <label for="nome">
+        Nome:
+     </label>
+     <br>
+    <input type="text" name="nome" id="nome" placeholder="Seu nome">
+     <br>
+    <label for="email">
+       O Seu Email:
+    </label>
+    <br>
+    <input type="email" name="email" id="email" placeholder="email">
+    <br>
+    <label for="empresa">
+        Empresa a ser denuncida:
+    </label>
+    <br>
+    <input type="text" name="empresa" id="empresa" placeholder="Nome da empresa">
+    <br>
+    <input type="submit" value="Enviar Denúncia" placeholder="Enviar Denúncia" onclick="alert('Denúncia enviada com sucesso!')">
+  </form>
+  </div>
+  <div class="integ">
+    <h1>Integrantes:</h1>
+    <h2>Matheus Luciano</h2>
+    <h2>Renan Aprígio</h2>
+    <p>E-mail de contato: FAWFAWFAW@gmail.com</p>
+  </div>
+</body>
+</html>
